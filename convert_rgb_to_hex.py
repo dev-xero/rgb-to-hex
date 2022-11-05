@@ -3,7 +3,7 @@ def rgb_to_hex(rgb: str, out_format: str = 'native'):
     # The format for the data is r,g,b so these will be in an array latter
 
     # Convert the string into an array
-    rgb_arr: [] = rgb.replace(' ', '').split(',')
+    rgb_arr = rgb.replace(' ', '').split(',')
 
     # Check if it's length is not anything else but three
     if len(rgb_arr) == 3 and not rgb_arr.__contains__(''):  # Check for empty strings too
